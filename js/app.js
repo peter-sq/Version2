@@ -54,6 +54,32 @@ $(document).ready(function(){
       carousels();
     })(jQuery);
   })();
+
+  function individual() {
+  
+    //Background for corporate button back to blue 
+    document.getElementById("corporate").style.background = "#0b1a33";
+    //Background for individual button back to pink
+    document.getElementById("individual").style.background = "#bc2e3c";
+    
+    //Change to individual prices
+    document.getElementById("wordpress").innerHTML = "$20/mo.";
+    document.getElementById("shared").innerHTML = "$20/mo.";
+    document.getElementById("vps").innerHTML = "$30/mo.";
+  }
+  
+  function corporate() {
+    
+    //Background for corporate button back to blue
+    document.getElementById("individual").style.background = "#0b1a33";
+    //Background for individual button back to pink
+    document.getElementById("corporate").style.background = "#bc2e3c";
+    
+    //Change to individual prices
+    document.getElementById("wordpress").innerHTML = "$216/yr.";
+    document.getElementById("shared").innerHTML = "$216/yr.";
+    document.getElementById("vps").innerHTML = "$324/yr.";
+  }
   
   
   
