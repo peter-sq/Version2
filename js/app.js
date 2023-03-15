@@ -55,31 +55,78 @@ $(document).ready(function(){
     })(jQuery);
   })();
 
+  document.getElementById("choice4").style.display = 'none';
+  document.getElementById("choice5").style.display = 'none';
+  document.getElementById("choice6").style.display = 'none';
+
   function individual() {
   
     //Background for corporate button back to blue 
-    document.getElementById("corporate").style.background = "#0b1a33";
+    const corporate = document.getElementById("corporate");
+    corporate.style.background = "#47A7FD";
+    corporate.style.color = "#FFFFFF";
     //Background for individual button back to pink
-    document.getElementById("individual").style.background = "#bc2e3c";
+    const individual = document.getElementById("individual");
+    individual.style.background = "#FFFFFF";
+    individual.style.color = "#47A7FD";
     
     //Change to individual prices
-    document.getElementById("wordpress").innerHTML = "$20/mo.";
-    document.getElementById("shared").innerHTML = "$20/mo.";
-    document.getElementById("vps").innerHTML = "$30/mo.";
+    document.getElementById("choice4").style.display = 'none';
+    document.getElementById("choice5").style.display = 'none';
+    document.getElementById("choice6").style.display = 'none';
+    
+    document.getElementById("choice1").style.display = 'block';
+    document.getElementById("choice2").style.display = 'block';
+    document.getElementById("choice3").style.display = 'block';
+   
   }
   
   function corporate() {
     
     //Background for corporate button back to blue
-    document.getElementById("individual").style.background = "#0b1a33";
+    const indiv = document.getElementById("individual");
+    indiv.style.background = "#47A7FD"
+    indiv.style.color = "#FFFFFF"
     //Background for individual button back to pink
-    document.getElementById("corporate").style.background = "#bc2e3c";
-    
+    const corp = document.getElementById("corporate");
+    corp.style.background = "#FFFFFF";
+    corp.style.color = "#47A7FD";
+     
     //Change to individual prices
-    document.getElementById("wordpress").innerHTML = "$216/yr.";
-    document.getElementById("shared").innerHTML = "$216/yr.";
-    document.getElementById("vps").innerHTML = "$324/yr.";
+    document.getElementById("choice1").style.display = 'none';
+    document.getElementById("choice2").style.display = 'none';
+    document.getElementById("choice3").style.display = 'none';
+
+    document.getElementById("choice4").style.display = 'block';
+    document.getElementById("choice5").style.display = 'block';
+    document.getElementById("choice6").style.display = 'block';
+  
   }
+
+  $(".question-wrapper").click( function () {
+    var container = $(this).parents(".accordion");
+    var answer = container.find(".answer-wrapper");
+    var trigger = container.find(".material-icons.drop");
+    var state = container.find(".question-wrapper");
+    
+    answer.animate({height: "toggle"}, 100);
+    
+    if (trigger.hasClass("icon-expend")) {
+      trigger.removeClass("icon-expend");
+      // state.removeClass("active");
+    }
+    else {
+      trigger.addClass("icon-expend");
+      // state.addClass("active");
+    }
+    
+    if (container.hasClass("expanded")) {
+      container.removeClass("expanded");
+    }
+    else {
+      container.addClass("expanded");
+    }
+  });
   
   
   
