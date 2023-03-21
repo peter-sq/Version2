@@ -114,6 +114,7 @@ html {
         color: var(--mmb-black);
         padding: 0 20px;
         line-height: 70px;
+        letter-spacing: 0.1em;
      }
       nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
         text-decoration: none;
@@ -320,7 +321,7 @@ html {
       padding: 2em 1.5em;
       height: 360px;
       left: 800px;
-      top: 400px;
+      top: 450px;
       background: #FFFFFF;
       box-shadow: 0px 4px 11px rgba(97, 96, 96, 0.25), 0px 8px 10px rgba(255, 255, 255, 0.25), -4px -4px 10px rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(5px);
@@ -330,7 +331,7 @@ html {
       position: absolute;
       width: 15%;
       margin: 1em;
-      left: 1250px;
+      left: 1160px;
       top: 200px;
       background: white;
       box-shadow: 0px 4px 11px rgba(97, 96, 96, 0.25), 0px 8px 10px rgba(255, 255, 255, 0.25), -4px -4px 10px rgba(255, 255, 255, 0.2);
@@ -429,7 +430,7 @@ html {
      .head-text p{
       font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
       font-style: normal;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 40px;
       line-height: 60px;
       align-items: center;
@@ -456,6 +457,7 @@ html {
       border-radius: 8px;
       margin-left: 5em;
       border: none;
+      margin-top: 2em;
      }
      .hero-buttons .play-button{
       width: 160px;
@@ -465,6 +467,17 @@ html {
       border: none;
       background-color: #FEF5EE;
      }
+
+     @media only screen and (min-width: 480px) and (max-width: 768px){
+     .hero-buttons .enquiry-button {
+      margin-left: 4em;
+      width: 130px;
+  }
+  .hero-buttons .play-button{
+    margin-left: 1em;
+    width: 130px;
+  }
+}
 
      @media only screen and (min-device-width : 321px) 
      and (max-device-width : 479px) {
@@ -492,7 +505,7 @@ html {
     .hero-images img{
       position: absolute;
       height: 500px;
-      width: 30%;
+      width: 25%;
       left: 735px;
       top: 0px;
       margin: 10em 13em;
@@ -586,18 +599,18 @@ html {
   @media only screen and (min-width: 320px) and (max-width: 479px) {
     .hero-images img {
       position: inherit;
-      margin: 0.5em;
+      margin: 4em 0.5em;
       width: 100%;
   }
   .single-card{
-    top: 750px;
+    top: 850px;
     left: 10px;
     width: auto;
   }
   .single-top-card{
-    left: 196px;
-    top: 480px;
-    width: 48%;;
+    left: 176px;
+    top: 680px;
+    width: 45%;
   }
 }
 
@@ -612,14 +625,14 @@ html {
     width: 50%;
     height: 340px;
     left: 20px;
-    top: 1100px;
+    top: 950px;
     padding: 0;
   }
   .single-top-card{
     width: 35%;
     margin: 1em;
     left: 290px;
-    top: 790px;
+    top: 750px;
   }
   .patner-sliders{
     padding-top: 12em !important;
@@ -636,7 +649,7 @@ html {
       font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
       font-style: normal;
       font-weight: 700;
-      font-size: 23px;
+      font-size: 25px;
       line-height: 34px;
       white-space: nowrap;
     }
