@@ -504,11 +504,8 @@ html {
     }
     @media screen and (min-width: 321px)and (max-width: 469px) {
       .hero-buttons .play-button {
-        /* margin-left: 5em !important; */
+        margin-left: 5em !important;
         margin-top: 1em;
-    }
-    .hero-buttons .enquiry-button {
-      margin-left: 0em;
     }
   }
     @media only screen and (min-width: 900px) and (max-width: 1400px){
@@ -589,18 +586,14 @@ html {
       width: 100%;
   }
   .single-card{
-    top: 780px;
+    top: 980px;
     left: 10px;
     width: auto;
   }
   .single-top-card{
-    left: 210px;
-    top: 500px;
-    width: 45%;
-  }
-  .about-no-image{
-    width: 130px;
-    height: 130px;
+    left: 166px;
+    top: 640px;
+    width: 48%;;
   }
 }
 
