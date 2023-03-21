@@ -256,10 +256,6 @@ html {
      width: 100%;
      /* margin: 3em 5em 0 3em !important; */
    }
-   .hero-buttons .play-button {
-    margin-left: 5em !important;
-    margin-top: 1em;
-   }
  }
       #nav-toggle {
         position: absolute;
@@ -469,6 +465,19 @@ html {
       border: none;
       background-color: #FEF5EE;
      }
+
+     @media only screen and (min-device-width : 321px) 
+     and (max-device-width : 479px) {
+      .hero-buttons .enquiry-button {
+        margin-left: 1em !important;
+        width: 130px;
+    }
+    .hero-buttons .play-button{
+      margin-left: 1em;
+      width: 130px;
+    }
+   }
+
      .enquiry-button a{
       color: white;
     }
@@ -502,12 +511,7 @@ html {
       margin: 2em;
      }
     }
-    @media screen and (min-width: 321px)and (max-width: 469px) {
-      .hero-buttons .play-button {
-        margin-left: 5em !important;
-        margin-top: 1em;
-    }
-  }
+  
     @media only screen and (min-width: 900px) and (max-width: 1400px){
       .column-text .head-text{
        max-width: 500px;
@@ -586,13 +590,13 @@ html {
       width: 100%;
   }
   .single-card{
-    top: 980px;
+    top: 750px;
     left: 10px;
     width: auto;
   }
   .single-top-card{
-    left: 166px;
-    top: 640px;
+    left: 196px;
+    top: 480px;
     width: 48%;;
   }
 }
