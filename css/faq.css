@@ -1,0 +1,209 @@
+@import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+      /* CSS Variables */
+      :root {
+        --mmb-backgroud: #E5EFFB;
+        --mmb-black:#25282B;
+        --testimonial-background:#FEF5EE;
+        --mmb-blue:#47A7FD;
+        --mmb-red:#DB3F40;
+        --mmb-white:#FFFFFF;
+        --play-button-background:#FEF5EE;
+        --hero-text-font:#7F7F7F;
+        --services-box-shadow:-8px 5px 13px rgba(232, 232, 232, 0.45), 5px 8px 13px rgba(232, 232, 232, 0.45);
+        --pricing-box-shadow:-8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
+        --customer-review-background:#FEF5EE;
+        --footer-background:#E5EFFB;
+        --footer-text:#7F7F7F;
+      }
+      *, *:after, *:before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+     }
+  
+     
+  .tooltip  {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+    
+  .master-box {
+    padding: 20em 10em;
+  }
+  
+  @media (max-width:768px){
+    .master-box {
+      padding: 2em 2em;
+    }
+  }
+
+
+  
+  .faq-header {
+    background: var(--mmb-white);
+    padding: 50px 30px 10px 0;
+    text-align: center;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  h1.title {
+    font-size: 2.1em;
+    letter-spacing: -1px;
+    font-weight: 400;
+  }
+  
+  #myInput {
+    width: 50%;
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #000;
+    margin: 15px 0 15px 0;
+  }
+
+  @media (max-width:480px){
+    #myInput {
+      width: 80%;
+    }
+    .btns{
+        margin: 3px;
+    }
+    #myUL li span{
+    font-size: 15px !important;
+    }
+  }
+  
+  #myBtnContainer {
+    margin: 15px;
+    letter-spacing: 5px;
+  }
+  
+  /* Style the buttons */
+  .btns {
+    border: none;
+    outline: none;
+    padding: 8px 15px 8px 0;
+    margin: 3px;
+    background-color: var(--mmb-blue);
+    color: #ffffffd2;
+    cursor: pointer;
+    font-size: 14px ;
+    width: 160px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.2);
+  }
+  
+  .btns:hover {
+    background: var(--mmb-blue);
+    color: white;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3), 0 3px 5px 0 rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+  }
+  
+  .btns.active {
+    background: var(--mmb-blue);
+    color: white;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3), 0 3px 5px 0 rgba(0,0,0,0.3);
+  }
+  
+  .btns::before {
+    content: '\00bb   ';
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  
+  .btns.active::before {
+    content: '\00bb   ';
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.01);
+  }
+  
+  #myUL li span {
+    cursor: pointer;
+    -moz-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease;
+    border: 1px solid lightgrey;
+    margin-top: -1px;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 20px; 
+    color: #565555;
+    display: block;
+  }
+  
+  #myUL li span:hover:not(.header) {
+      background-color: #e4ecf9;
+      border: 1px solid grey;
+  }
+  
+  .filterDiv {
+    display: none; /* Hidden by default */
+    transition: all 0.3s;
+    margin-bottom: 4px;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .accordion-thumb {
+    font-weight: bold;
+    background: white;
+  }
+  
+  /* Active answer */
+  .filterDiv.is-active .accordion-thumb::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .accordion-thumb::before {
+    content: '';
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    vertical-align: middle;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+  }
+  
+  .accordion-panel {
+    padding: 10px 20px 10px 20px;
+    line-height: 30px;
+    display: none;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    background: white;
+  }
