@@ -177,6 +177,11 @@ html {
         height: 70px;
         width: 70px;
      }
+     @media only screen and (width:768px) and (resolution: 163dpi) {
+      .column-text .head-text{
+        margin: 3em 0 3em;
+      }
+}
       @media only screen and (max-width: 768px) {
         .nav-mobile {
           display: block;
@@ -250,14 +255,6 @@ html {
   
   } 
 
-
-  
-  @media screen and (min-width: 480px) {
-    .column-text .head-text {
-     width: 100%;
-     /* margin: 3em 5em 0 3em !important; */
-   }
- }
       #nav-toggle {
         position: absolute;
         left: 18px;
@@ -427,6 +424,14 @@ html {
       text-transform: capitalize;
       color: var(--mmb-black);
      }
+     @media screen and (min-width: 480px) {
+      .column-text .head-text {
+       width: 100%;
+       max-width: 600px;
+      margin: 3em 2em 2em 2em;
+       /* margin: 3em 5em 0 3em !important; */
+     }
+   }
      .head-text p{
       font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
       font-style: normal;
@@ -521,11 +526,38 @@ html {
       position: inherit;
      }
      .row{
-      margin: 2em;
+      margin: 2em !important;
      }
     }
+
+    @media only screen and (min-width: 900px) and (max-width: 1014px){
+      .column-text .head-text{
+      max-width: 400px;
+      margin: 0;
+      }
+      .hero-images img {
+        position: absolute;
+        height: 500px;
+        width: 35%;
+        left: 335px;
+        top: 0px;
+        margin: 10em 13em;
+    }
+    .single-card{
+      width: 30%;
+      left: 450px;
+    }
+    .single-top-card{
+      width: 20%;
+      left: 690px;
+    }
+    .hero-buttons .enquiry-button {
+      margin-left: 0em;
+    }
+    }
+    
   
-    @media only screen and (min-width: 900px) and (max-width: 1400px){
+    @media only screen and (min-width: 901px) and (max-width: 1400px){
       .column-text .head-text{
        max-width: 500px;
        margin: 0;
@@ -533,7 +565,7 @@ html {
       .hero-images img{
         position: absolute;
         height: 500px;
-        width: 35%;
+        width: 30%;
         left: 585px;
         top: 0px;
         margin: 10em 2em;
@@ -547,16 +579,16 @@ html {
       }
       .single-card{
         width: 25%;
-        padding: 0.1em;
-        height: 280px;
-        left: 500px;
+        padding: 1rem;
+        height: auto;
+        left: 550px;
         top: 450px;
       }
       .patner-sliders {
         padding-top: 15em !important;
       }
       .flex-image-icons {
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
     .single-card button {
       height: 30px;
@@ -576,27 +608,47 @@ html {
 
   }
   }
-
-  @media screen and (min-width: 768px)and (max-width: 899px) {
-    .hero-buttons .play-button {
-      margin-left: 1em !important; 
-  }
-  .hero-images img{
-    margin: 5em 5em;
-    width: 150%;
+  @media only screen and (min-width: 320px) and (max-width: 479px)
+  and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .hero-images img {
+      position: inherit;
+      margin: 4em 0.5em;
+      width: 100%;
   }
   .single-card{
-    width: 38%;
-    left: 50px;
-    top: 980px;
+    top: 950px;
+    left: 10px;
+    width: auto;
   }
   .single-top-card{
-    width: 25%;
-    left: 550px;
-    top: 650px;
+    left: 170px;
+    top: 750px;
+    width: 45%;
   }
+  .patner-sliders{
+    padding-top: 3em !important;
   }
-  @media only screen and (min-width: 320px) and (max-width: 479px) {
+  .our-services .card {
+    margin: 0 2px;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .single-top-card {
+      left: 195px;
+      top: 750px;
+      width: 45%;
+  }
+
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
     .hero-images img {
       position: inherit;
       margin: 4em 0.5em;
@@ -608,10 +660,14 @@ html {
     width: auto;
   }
   .single-top-card{
-    left: 176px;
-    top: 680px;
+    left: 208px;
+    top: 700px;
     width: 45%;
   }
+  .patner-sliders{
+    padding-top: 2em !important;
+  }
+
 }
 
   @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -625,18 +681,38 @@ html {
     width: 50%;
     height: 340px;
     left: 20px;
-    top: 950px;
+    top: 1100px;
     padding: 0;
   }
   .single-top-card{
     width: 35%;
     margin: 1em;
     left: 290px;
-    top: 750px;
+    top: 850px;
   }
   .patner-sliders{
     padding-top: 12em !important;
   }
+}
+
+@media screen and (min-width: 768px)and (max-width: 899px) {
+  .hero-buttons .play-button {
+    margin-left: 1em !important; 
+}
+.hero-images img{
+  margin: 5em 10em;
+  width: 120%;
+}
+.single-card{
+  width: 38%;
+  left: 50px;
+  top: 985px;
+}
+.single-top-card{
+  width: 25%;
+  left: 550px;
+  top: 650px;
+}
 }
     
     .patner-sliders{
@@ -644,6 +720,16 @@ html {
       padding-top: 8em;
       display: flex;
     }
+
+    @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .patner-sliders {
+      padding-top: 0.5em!important;
+  }
+
+}
     .slider-text p{
       margin: 4em 0px 0px 4em;
       font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
@@ -860,6 +946,12 @@ html {
       color: var(--mmb-black);
       cursor: pointer;
     }
+    @media only screen and (min-width: 320px) and (max-width: 479px)
+    and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .our-services .card {
+      margin: 0 2px;
+    }
+  }
     .our-services .card h5 {
       color: var(--mmb-black);
       font-size: 18px;
@@ -988,6 +1080,7 @@ html {
   border-radius: 50%;
   padding: 10px;
 }
+
 .about-hospital{
   width: 180px;
   height: 180px;
@@ -1005,10 +1098,11 @@ html {
   border: 8px solid #C0E0FA;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px){
 .about-no-image{
   width: 130px;
   height: 130px;
+  left: 200px;
 }
 }
 
@@ -1047,10 +1141,11 @@ html {
 }
 @media only screen and (min-width: 1148px) and (max-width: 1398px){
   .hero-images img{
-    left: 735px;
+    left: 685px;
+    /* left: 1000px; */
   }
   .single-top-card{
-    left: 1040px;
+    left: 1000px;
   }
   }
 @media only screen and (min-width: 900px) and (max-width: 1400px){
@@ -1274,7 +1369,6 @@ color: #25282B;
       margin-bottom: .25em;
     }
     }
-
   .price section {
     text-align: center;
     border-radius: 5px;
@@ -1670,6 +1764,7 @@ color: #25282B;
       @media only screen and (max-width: 768px) {
         .accordion {
           margin-bottom: 16px;
+          width: 100%;
         }
       }
       .question-wrapper {
