@@ -328,7 +328,7 @@ html {
       position: absolute;
       width: 15%;
       margin: 1em;
-      left: 1160px;
+      left: 1110px;
       top: 200px;
       background: white;
       box-shadow: 0px 4px 11px rgba(97, 96, 96, 0.25), 0px 8px 10px rgba(255, 255, 255, 0.25), -4px -4px 10px rgba(255, 255, 255, 0.2);
@@ -337,6 +337,25 @@ html {
      }
      .single-top-card p{
       margin-left: 0.5em;
+      /* margin: 5px; */
+      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-style: normal;
+      font-weight: 750;
+      font-size: 14px;
+      line-height: 17px;
+      align-items: center;
+      letter-spacing: 0.06em;
+      color: var(--mmb-black);
+     }
+     .single-top-card span{
+      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      align-items: center;
+      letter-spacing: 0.01em;
+      color: #7F7F7F;
      }
      .single-card p {
       margin: 5px;
@@ -373,9 +392,9 @@ html {
       border: none;
       color: #47A7FD;
      }
-     .fa-ambulance:before {
-      content: "\f0f9";
-      font-size: 30px;
+     .fa-microscope::before {
+      content: "\f610";
+      font-size: 28px;
       background-color: #E5EFFB;
       color: var(--mmb-blue);
       padding: 10px;
@@ -383,9 +402,19 @@ html {
       margin-left: 10px;
       margin-top: 10px;
      }
-     .fa-user-md:before{
+     .fa-ambulance:before {
       content: "\f0f9";
-      font-size: 40px;
+      font-size: 28px;
+      background-color: #E5EFFB;
+      color: var(--mmb-blue);
+      padding: 10px;
+      margin-top: 25px;
+      margin-left: 10px;
+      margin-top: 10px;
+  }
+     .fa-hospital-user:before {
+      content: "\f80d";
+      font-size: 35px;
       color: var(--mmb-red);
       background-color: #FEF5EE;
       padding: 10px;
@@ -393,9 +422,9 @@ html {
       margin-left: 10px;
       margin-top: 10px;
      }
-     .fa-stethoscope:before{
-      content: "\f0f9";
-      font-size: 40px;
+     .fa-folder-medical:before{
+      content: "\f477";
+      font-size: 35px;
       background-color: #FFF0CE;
       color: #FABC2F;
       padding: 10px;
@@ -426,9 +455,9 @@ html {
      }
      @media screen and (min-width: 480px) {
       .column-text .head-text {
-       width: 100%;
+       /* width: 100%;
        max-width: 600px;
-      margin: 3em 2em 2em 2em;
+      margin: 3em 2em 2em 2em; */
        /* margin: 3em 5em 0 3em !important; */
      }
    }
@@ -510,7 +539,7 @@ html {
     .hero-images img{
       position: absolute;
       height: 500px;
-      width: 25%;
+      width: 20%;
       left: 735px;
       top: 0px;
       margin: 10em 13em;
@@ -587,17 +616,14 @@ html {
       .patner-sliders {
         padding-top: 15em !important;
       }
-      .flex-image-icons {
-        /* margin-top: 10px; */
-    }
     .single-card button {
       height: 30px;
     }
     .single-top-card {
       margin: 1em;
-      left: 830px;
+      left: 780px !important;
       top: 200px;
-      width: 17%;
+      width: 20%;
     }
     .hero-buttons .play-button {
       margin-left: 1em !important; 
@@ -608,6 +634,14 @@ html {
 
   }
   }
+
+  @media only screen and (min-width: 1148px) and (max-width: 1399px){
+  .single-top-card{
+    left: 900px !important;
+  }
+  }
+  
+
   @media only screen and (min-width: 320px) and (max-width: 479px)
   and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
     .hero-images img {
@@ -701,7 +735,7 @@ html {
 }
 .hero-images img{
   margin: 5em 10em;
-  width: 120%;
+  width: 90%;
 }
 .single-card{
   width: 38%;
@@ -710,8 +744,8 @@ html {
 }
 .single-top-card{
   width: 25%;
-  left: 550px;
-  top: 650px;
+  left: 400px;
+  top: 720px;
 }
 }
     
@@ -989,7 +1023,7 @@ html {
       outline: 0;
     }
 
-    .fa-home::before {
+    .fa-house-medical-circle-check::before {
       background: #E5EFFB;
       border-radius: 6px;
       padding: 10px;
@@ -997,7 +1031,7 @@ html {
       color: var(--mmb-blue);
       font-size: 30px;
   }
-  .fa-tablet::before {
+  .fa-laptop-medical::before {
     background: #FEF5EE;
     color: #DB3F40;
     border-radius: 6px;
@@ -1005,7 +1039,7 @@ html {
     margin: 10px;
     font-size: 30px;
 }
-.fa-hospital-o::before{
+.fa-hospital::before{
   background: #FFF0CE;
   color: #FABC2F;
   border-radius: 6px;
@@ -1021,7 +1055,7 @@ html {
   color: var(--mmb-blue);
   font-size: 30px;
 }
-.fa-briefcase::before{
+.fa-briefcase-medical::before{
   background: #FEF5EE;
   color: #DB3F40;
   border-radius: 6px;
@@ -1029,9 +1063,17 @@ html {
   margin: 10px;
   font-size: 30px;
 }
-.fa-folder-o::before{
+.fa-notes-medical::before{
   background:#ECE6FF;
   color: #805EED;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 30px;
+}
+.fa-kit-medical::before{
+  background:#ECE6FF;
+  color: #6925ee;
   border-radius: 6px;
   padding: 10px;
   margin: 10px;
@@ -1054,7 +1096,7 @@ html {
 /* About Us Page*/
 .about-us-section{
   background-color: var(--mmb-backgroud);
-  padding:5em;
+  padding: 5em 7em;
 }
 .about-us {
   display: flex;
@@ -1132,12 +1174,13 @@ html {
 }
 .card-rank{
   background-color: #C2E1FA;
-  margin: 50px;
+  margin: 100px 70px;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  width: 90%;
 }
 @media only screen and (min-width: 1148px) and (max-width: 1398px){
   .hero-images img{
@@ -1213,7 +1256,9 @@ html {
 }
 
 .cardz span {
-  font-size:12px;
+  font-size: 15px;
+  color: var(--footer-text);
+
 }
  .about-text{
   margin: 30px;
@@ -1231,6 +1276,7 @@ html {
     font-size:22px;
     font-weight: 600;
     margin: 0.2em;
+    text-align: center;
   }
  .about-text h1{
   letter-spacing: 0.06em;
@@ -1253,13 +1299,13 @@ text-transform: capitalize;
 color: #25282B;
  }
  .about-text p {
-  max-width: 560px;
- font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: #7F7F7F;
+  max-width: 480px;
+    font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7F7F7F;
  }
  .list-items{
   display: flex;
@@ -1268,25 +1314,25 @@ color: #25282B;
  }
  .list-items .one{
    background-color: var(--mmb-white);
-   padding: 15px;
+   padding: 10px;
    margin: 10px 30px;
    box-shadow: -8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
  }
  .list-items .two{
   background-color: var(--mmb-white);
-  padding: 15px;
+  padding: 10px;
   margin: 10px 30px;
   box-shadow: -8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
 }
 .list-items .three{
   background-color: var(--mmb-white);
-  padding: 15px;
+  padding: 10px;
   margin: 10px 30px;
   box-shadow: -8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
 }
 .list-items .four{
   background-color: var(--mmb-white);
-  padding: 15px;
+  padding: 10px;
   margin: 10px 30px;
   box-shadow: -8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
 }
@@ -1297,6 +1343,7 @@ color: #25282B;
   border-radius: 8px;
   background: var(--mmb-red);
   box-shadow: 3px 5px 10px rgba(234, 36, 40, 0.19);
+  width: 200px;
 }
 .Read-more a{
   color: var(--mmb-white);
@@ -1355,7 +1402,7 @@ color: #25282B;
     grid-column-gap: 20px; 
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 673px) {
     .price{
       grid-template-areas: "1";
     }
@@ -1369,6 +1416,27 @@ color: #25282B;
       margin-bottom: .25em;
     }
     }
+    @media only screen  and (min-device-width: 674px)  and (max-width: 900px) {
+      .price{
+        grid-template-areas: "1 2";
+      }
+      .pricing{
+        margin-right: 35em;
+        grid-template-areas: "1 2";
+        width: 100%;
+      }
+      .pricing-text h1 {
+        font-size: 2em;
+        margin-bottom: .25em;
+      }
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+      }
   .price section {
     text-align: center;
     border-radius: 5px;
@@ -1446,7 +1514,7 @@ color: #25282B;
        .test-title{
         font-style: normal;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 30px;
         line-height: 50px;
         align-items: center;
         letter-spacing: 0.01em;
