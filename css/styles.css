@@ -2076,6 +2076,7 @@ fieldset{
 @media (max-width:920px){
     .flex{
         flex-wrap:wrap;
+        flex-direction: column-reverse;
     }
     
     .padding_1x, .padding_2x, .padding_3x, .padding_4x{
