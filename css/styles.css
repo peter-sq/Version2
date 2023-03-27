@@ -108,6 +108,7 @@ html {
         float: left;
         display: inline;
         position: relative;
+        font-family:'Roboto', sans-serif;
      }
       nav ul li a {
         display: block;
@@ -115,6 +116,7 @@ html {
         padding: 0 20px;
         line-height: 70px;
         letter-spacing: 0.1em;
+    
      }
       nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
         text-decoration: none;
@@ -307,7 +309,7 @@ html {
         font-size: 10vw;
         padding: 0px;
         color: transparent;
-        font-family:'Avenir Next LT Pro', sans-serif, 'Arial Black';
+        font-family:'Roboto', sans-serif;
         text-shadow: 5px -5px 0 #fcb42a, 1px -1px 0 #f7f461, 0px 0px 0 #2e2e2e, -1px 2px 0 #2c2c2c, -2px 3px 0 #2a2a2a, -3px 4px 0 #282828, -4px 5px 0 #262626, -5px 6px 0 #242424, -6px 7px 0 #222, -7px 8px 0 #202020, -8px 9px 0 #1e1e1e, -9px 10px 0 #1c1c1c, -10px 11px 0 #1a1a1a, -11px 12px 0 #181818, -12px 13px 0 #161616, -13px 14px 0 #141414, -14px 15px 0 #121212, -10px 15px 30px rgba(0, 0, 0, 0.9);
      }
 
@@ -338,7 +340,7 @@ html {
      .single-top-card p{
       margin-left: 0.5em;
       /* margin: 5px; */
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
       font-style: normal;
       font-weight: 750;
       font-size: 14px;
@@ -348,7 +350,7 @@ html {
       color: var(--mmb-black);
      }
      .single-top-card span{
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
@@ -359,7 +361,7 @@ html {
      }
      .single-card p {
       margin: 5px;
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
       font-style: normal;
       font-weight: 750;
       font-size: 14px;
@@ -373,7 +375,7 @@ html {
       margin-top: 20px;
      }
      .single-card span{
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
@@ -394,7 +396,7 @@ html {
      }
      .fa-microscope::before {
       content: "\f610";
-      font-size: 28px;
+      font-size: 27px;
       background-color: #E5EFFB;
       color: var(--mmb-blue);
       padding: 10px;
@@ -404,7 +406,7 @@ html {
      }
      .fa-ambulance:before {
       content: "\f0f9";
-      font-size: 28px;
+      font-size: 27px;
       background-color: #E5EFFB;
       color: var(--mmb-blue);
       padding: 10px;
@@ -414,7 +416,7 @@ html {
   }
      .fa-hospital-user:before {
       content: "\f80d";
-      font-size: 35px;
+      font-size: 27px;
       color: var(--mmb-red);
       background-color: #FEF5EE;
       padding: 10px;
@@ -424,7 +426,7 @@ html {
      }
      .fa-folder-medical:before{
       content: "\f477";
-      font-size: 35px;
+      font-size: 27px;
       background-color: #FFF0CE;
       color: #FABC2F;
       padding: 10px;
@@ -444,7 +446,7 @@ html {
      .column-text .head-text{
       max-width: 600px;
       margin: 3em 5em 0 3em;
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 28px;
@@ -461,26 +463,25 @@ html {
        /* margin: 3em 5em 0 3em !important; */
      }
    }
-     .head-text p{
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 60px;
-      align-items: center;
-      letter-spacing: 0.01em;
-      text-transform: capitalize;
+      .head-text p {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 60px;
+        align-items: center;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
      }
      .head-text span{
      color: var(--mmb-red);
      }
      .head-text .under-text{
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 30px;
-      letter-spacing: 0.02em;
       color: var(--hero-text-font);
      }
      .hero-buttons .enquiry-button{
@@ -553,7 +554,7 @@ html {
   @media screen and (min-width: 368px)and (max-width: 479px) {
     .hero-images img {
       position: inherit;
-      margin: 4em 4em;
+      margin: 4em 1em;
       width: 70%;
   }
   .single-card{
@@ -667,8 +668,8 @@ html {
   and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
     .hero-images img {
       position: inherit;
-    margin: 4em 2em;
-    width: 80%;
+      margin: 4em 1em;
+      width: 100%;
   }
   .single-card{
     top: 950px;
@@ -701,8 +702,8 @@ html {
 
   @media screen and (min-width: 368px)and (max-width: 479px) {
    .single-top-card {
-    left: 180px;
-    /* top: 690px; */
+    left: 190px;
+    top: 740px;
 }
 }
 
@@ -793,7 +794,7 @@ html {
 }
     .slider-text p{
       margin: 4em 0px 0px 4em;
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 25px;
@@ -950,7 +951,7 @@ html {
     }
  
     .our-services h2 {
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
@@ -997,7 +998,7 @@ html {
       padding: 2em 2em;
       border-radius: 8px;
       border: 0;
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
@@ -1020,7 +1021,7 @@ html {
       margin: 1em 0;
     }
     .our-services .card p {
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -1143,27 +1144,70 @@ html {
     position: relative;
     margin-top: 6em;
 }
+.cycle-image-background-2{
+  background: var(--mmb-blue);
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  position: relative;
+  /* margin-top: 2em; */
+  top: 12em;
+  left: -4em;
+}
+.cycle-image-background-3{
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  position: relative;
+  /* margin-top: 2em; */
+  top: 1em;
+  left: -22em;
+}
 .about-doctor{
   width: 250px;
   height: 250px;
   border-radius: 50%;
   padding: 10px;
 }
+@media screen and (min-width: 368px)and (max-width: 594px) {
+  .cycle-image-background {
+    background: var(--mmb-red);
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 6em;
+}
+.about-doctor{
+   width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.about-hospital{
+position: relative;
+
+}
+}
+.about-box-img{
+  display: flex;
+}
 
 .about-hospital{
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   position: absolute;
-  top: 5em;
-  left: 10em;
+  padding: 10px;
+  /* top: 5em;
+  left: 5em; */
 }
 .about-no-image{
   width: 150px;
   height: 150px;
   border-radius: 50%;
   position: absolute;
-  top: -6em;
+  /* top: -6em; */
   border: 8px solid #C0E0FA;
 }
 
@@ -1171,7 +1215,7 @@ html {
 .about-no-image{
   width: 130px;
   height: 130px;
-  left: 200px;
+  left: 180px;
 }
 }
 
@@ -1208,6 +1252,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
+  padding: 10px;
 }
 @media only screen and (min-width: 1148px) and (max-width: 1398px){
   .hero-images img{
@@ -1308,31 +1353,33 @@ html {
  .about-text h1{
   letter-spacing: 0.06em;
   color: #585858;
-  font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+  font-family:'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
  }
  .about-text h2{
-font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 43px;
-display: flex;
-align-items: center;
-text-transform: capitalize;
-color: #25282B;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #25282B;
  }
  .about-text p {
-  max-width: 480px;
-    font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #7F7F7F;
+  max-width: 522px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #7F7F7F;
  }
  .list-items{
   display: flex;
@@ -1383,14 +1430,14 @@ color: #25282B;
   width: 1000px;
   padding: 50px;
   text-align: center;
-  font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+  font-family:'Roboto', sans-serif;
 }
 
 .pricing-text h1 {
   color: var(--mmb-black);
   font-size: 2em;
   margin-bottom: .25em;
-  font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+  font-family:'Roboto', sans-serif;
 }
 
 .pricing-text h2 {
@@ -1482,12 +1529,12 @@ color: #25282B;
       letter-spacing: 2px;
       margin-bottom: 2em;
       color: var(--mmb-black);
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
     }
       .price section h2:first-of-type {
         margin-bottom: .5em;
         color: var(--mmb-black);
-        font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+        font-family:'Roboto', sans-serif;
         margin-right: 5em;
       }
     .price section h1 {
@@ -1497,7 +1544,7 @@ color: #25282B;
       font-family: 800;
       margin-bottom: 2em;
       color: var(--hero-text-font);
-      font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+      font-family:'Roboto', sans-serif;
      }
      .price section p{
       font-size: 0.8em;
@@ -1623,7 +1670,7 @@ color: #25282B;
         line-height: 21px;
         text-align: -webkit-match-parent;
         color: var(--hero-text-font);
-        font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+        font-family:'Roboto', sans-serif;
         margin-top: 10px;
       }
 
@@ -1709,7 +1756,7 @@ color: #25282B;
         color:var(--mmb-black);
         font-size: 1rem;
         line-height: 1.3;
-        font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+        font-family:'Roboto', sans-serif;
         text-transform: capitalize;
         padding-left: 1.4em;
       }
@@ -1796,7 +1843,7 @@ color: #25282B;
         }
       }
       h2 {
-        font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+        font-family:'Roboto', sans-serif;
         font-size: 32px;
         color: #000;
         line-height: 1.25;
