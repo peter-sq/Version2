@@ -1178,15 +1178,15 @@ html {
     position: relative;
     margin-top: 6em;
 }
+.about-hospital{
+  position: relative !important;
+  
+  }
 .about-doctor{
    width: 220px;
     height: 220px;
     border-radius: 50%;
     padding: 10px;
-}
-.about-hospital{
-position: relative;
-
 }
 }
 .about-box-img{
@@ -1215,7 +1215,7 @@ position: relative;
 .about-no-image{
   width: 130px;
   height: 130px;
-  left: 180px;
+  left: 150px;
 }
 }
 
@@ -1863,7 +1863,7 @@ position: relative;
         }
       }
       .question {
-        font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+        font-family:'Roboto', sans-serif;
         font-size: 17px;
         color: var(--mmb-black);
         line-height: 1.5;
@@ -1981,7 +1981,7 @@ position: relative;
 body{
     margin:0;
     overflow-x:hidden !important;
-    font-family: 'Avenir Next LT Pro', sans-serif, 'Arial Black';
+    font-family:'Roboto', sans-serif;
 }
 
 a{
