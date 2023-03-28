@@ -138,7 +138,7 @@
                     </div>
                   </section>
                 <!-- Hero text flex section -->
-                  <div class="row">
+                  <div class="row" id="row" >
                     <div data-aos="fade-right">
                     <div class="left-columns">
                       <div class="column-text">
@@ -321,7 +321,7 @@
       <img src= "./assets/images/physician.jpg"  class="about-hospital">
     </div>
     <div class = "cycle-image-background-3">
-      <img src="" class="about-no-image">
+      <img src="#" class="about-no-image">
     </div>
   </div>
     <div class="card-rank">
@@ -627,7 +627,7 @@
                 <img src= "./assets/images/physician.jpg"  class="about-hospital">
               </div>
               <div class = "cycle-image-background-3">
-                <img src="" class="about-no-image">
+                <img src="/" class="about-no-image" >
               </div>
             </div>
             </div>
@@ -733,10 +733,15 @@
         marn = document.querySelector("nav ul");
         if (marn.style.display === "block") {
           bColor =  document.querySelector("nav");
+          visi = document.querySelector("#row");
+          console.log(visi);
           bColor.style.background = '#E5EFFB';
+          visi.style.visibility = "hidden";
         }
           else {
+            visi.style.visibility = "inherit";
             bColor.style.background = 'none';
+          
           }
         
         // margin.style.margin = "11em 5em 0 3em",  "!important";

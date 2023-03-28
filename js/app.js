@@ -64,12 +64,12 @@ $(document).ready(function(){
   
     //Background for corporate button back to blue 
     const corporate = document.getElementById("corporate");
-    corporate.style.background = "#47A7FD";
-    corporate.style.color = "#FFFFFF";
+    corporate.style.background = "#FFFFFF";
+    corporate.style.color = "#47A7FD";
     //Background for individual button back to pink
     const individual = document.getElementById("individual");
-    individual.style.background = "#FFFFFF";
-    individual.style.color = "#47A7FD";
+    individual.style.background = "#47A7FD";
+    individual.style.color = "#FFFFFF";
     
     //Change to individual prices
     document.getElementById("choice4").style.display = 'none';
@@ -86,12 +86,12 @@ $(document).ready(function(){
     
     //Background for corporate button back to blue
     const indiv = document.getElementById("individual");
-    indiv.style.background = "#47A7FD"
-    indiv.style.color = "#FFFFFF"
+    indiv.style.background = "#FFFFFF"
+    indiv.style.color = "#47A7FD"
     //Background for individual button back to pink
     const corp = document.getElementById("corporate");
-    corp.style.background = "#FFFFFF";
-    corp.style.color = "#47A7FD";
+    corp.style.background = "#47A7FD";
+    corp.style.color = "#FFFFFF";
      
     //Change to individual prices
     document.getElementById("choice1").style.display = 'none';

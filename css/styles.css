@@ -80,6 +80,7 @@ html {
       height: 37.2px;
       left: 118px;
       top: 21.4px;
+      /* margin: 20px; */
      }
       .nav-container {
         max-width: 1200px;
@@ -150,24 +151,25 @@ html {
     }
     .login{
       color: var(--mmb-blue);
-      margin: 1.5em;
+      margin: 1.3em 1.5em;
       height: 2em;
       width: 100%;
-      height: 2em;
+      height: 2.5em;
       background: none;
       border: 1.8px solid var(--mmb-blue);
-       border-radius: 8px;
+      border-radius: 8px;
     }
     .register{
       background-color: var(--mmb-blue);
       border: 1.8px solid var(--mmb-blue);
       color: var(--mmb-white);
       width: 100%;
-      height: 2em;
-      margin: 1.5em;
-      margin-left: 2em;
+      height: 2.5em;
+      margin: 1.3em 1.5em;
+      margin-left: 2.5em;
       border: 1.8px solid var(--mmb-blue);
       border-radius: 8px;
+      padding: 4px;
     }
 
      /* Mobile navigation */
@@ -555,10 +557,10 @@ html {
     .hero-images img {
       position: inherit;
       margin: 4em 1em;
-      width: 70%;
+      width: 80%;
   }
   .single-card{
-    top: 850px;
+    top: 950px;
     left: 10px;
     width: auto;
   }
@@ -672,7 +674,7 @@ html {
       width: 100%;
   }
   .single-card{
-    top: 1050px;
+    top: 1060px;
     left: 10px;
     width: auto;
   }
@@ -778,7 +780,7 @@ html {
 }
     
     .patner-sliders{
-      margin-bottom: 100px;
+      margin-bottom: 70px;
       padding-top: 8em;
       display: flex;
     }
@@ -1737,7 +1739,7 @@ html {
 
       @media (min-width:321px) and (max-width:479px) {
      .row{
-      margin: 4em 1em !important;
+      margin: 2em 1em !important;
      }
      .head-text p {
       font-size: 30px;
