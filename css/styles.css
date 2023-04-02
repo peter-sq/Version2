@@ -1424,6 +1424,21 @@ html {
   margin: 10px 30px;
   box-shadow: -8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
  }
+ @media only screen and (max-width: 560px) {
+  .list-items .one{
+    width: 80%;
+  }
+  .list-items .two{
+    width: 80%;
+  }
+  .list-items .three{
+    width: 80%;
+  }
+  .list-items .four{
+    width: 80%;
+  }
+  }
+
  .one span{
   font-family: 'poppins', 'san-serif';
 font-style: normal;
@@ -1464,11 +1479,6 @@ align-items: center;
 letter-spacing: 0.02em;
 color: #25282B;
  }
-
- .one .fa-check{
-  
- }
-
  .list-items .two{
   background-color: var(--mmb-white);
   padding: 8px;
@@ -1476,6 +1486,11 @@ color: #25282B;
   margin: 10px 30px;
   box-shadow: -8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
 }
+@media only screen and (max-width: 560px) {
+  .list-items .two{
+    width: 80%;
+  }
+  }
 .list-items .three{
   background-color: var(--mmb-white);
   padding: 8px;
@@ -1483,6 +1498,11 @@ color: #25282B;
   margin: 10px 30px;
   box-shadow: -8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
 }
+@media only screen and (max-width: 560px) {
+  .list-items .three{
+    width: 80%;
+  }
+  }
 .list-items .four{
   background-color: var(--mmb-white);
   padding: 8px;
@@ -1490,6 +1510,11 @@ color: #25282B;
   margin: 10px 30px;
   box-shadow: -8px 5px 15px rgba(232, 232, 232, 0.25), 5px 8px 13px rgba(232, 232, 232, 0.25);
 }
+@media only screen and (max-width: 560px) {
+  .list-items .four{
+    width: 80%;
+  }
+  }
 .Read-more{
   padding: 8px 20px;
   margin: 10px 35px;
