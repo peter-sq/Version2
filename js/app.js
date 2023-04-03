@@ -66,7 +66,7 @@ $(document).ready(function(){
     const corporate = document.getElementById("corporate");
     corporate.style.background = "#FFFFFF";
     corporate.style.color = "#47A7FD";
-    //Background for individual button back to pink
+    //Background for individual button back to white
     const individual = document.getElementById("individual");
     individual.style.background = "#47A7FD";
     individual.style.color = "#FFFFFF";
