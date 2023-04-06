@@ -28,6 +28,10 @@ $(document).ready(function(){
     var carousels = function () {
       $(".owl-carousel1").owlCarousel({
         responsiveBaseElement: 'body',
+        autoplay: true,
+        autoPlaySpeed: 5000,
+        autoPlayTimeout: 5000,
+        autoplayHoverPause: true,
         loop: true,
         center: true,
         margin: 15,
@@ -36,7 +40,7 @@ $(document).ready(function(){
         responsive: {
           0: {
             items: 1,
-            nav: false
+            nav: false,
           },
           680: {
             items: 2,
@@ -59,6 +63,7 @@ $(document).ready(function(){
   document.getElementById("choice4").style.display = 'none';
   document.getElementById("choice5").style.display = 'none';
   document.getElementById("choice6").style.display = 'none';
+  document.getElementById("choice8").style.display = 'none';
 
   function individual() {
   
@@ -75,10 +80,12 @@ $(document).ready(function(){
     document.getElementById("choice4").style.display = 'none';
     document.getElementById("choice5").style.display = 'none';
     document.getElementById("choice6").style.display = 'none';
+    document.getElementById("choice8").style.display = 'none';
     
     document.getElementById("choice1").style.display = 'block';
     document.getElementById("choice2").style.display = 'block';
     document.getElementById("choice3").style.display = 'block';
+    document.getElementById("choice7").style.display = 'block';
    
   }
   
@@ -97,10 +104,12 @@ $(document).ready(function(){
     document.getElementById("choice1").style.display = 'none';
     document.getElementById("choice2").style.display = 'none';
     document.getElementById("choice3").style.display = 'none';
+    document.getElementById("choice7").style.display = 'none';
 
     document.getElementById("choice4").style.display = 'block';
     document.getElementById("choice5").style.display = 'block';
     document.getElementById("choice6").style.display = 'block';
+    document.getElementById("choice8").style.display = 'block';
   
   }
 
