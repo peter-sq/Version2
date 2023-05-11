@@ -1228,7 +1228,13 @@ html {
   left: -22em;
 }
 
-@media (max-width: 480px){
+@media (min-width: 600px){
+  #more-button{
+    display: none;
+  }
+}
+
+@media (max-width: 600px){
   #hide-img{
     display: none;
   }
@@ -1748,6 +1754,7 @@ color: #25282B;
     text-align: center;
     border-radius: 5px;
     padding: 40px 20px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     width: 300px;
