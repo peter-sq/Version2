@@ -2538,6 +2538,50 @@ footer .flex:last-child a{
     margin-top: -70px !important;
 }
 
+.modal-dialog{
+  margin: 5rem 25rem
+}
+.modal-content{
+  width: 50rem;
+  height: 22rem;
+  box-shadow:  rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.mockup-image{
+  margin-top:-8rem; 
+  margin-left:-7rem;
+  width: auto;
+}
+
+@media only screen and (min-width: 606px) and (max-width: 760px) {
+  .modal-dialog{
+    margin: 1rem 1rem
+  }
+  .modal-content{
+    width: 44rem;
+    height: 22rem;
+    box-shadow:  rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  }
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 522px) {
+    .modal-dialog{
+      margin: 1rem 1rem
+    }
+    .modal-content{
+      max-width: 21rem;
+      height: auto;
+      box-shadow:  rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+    .mockup-image{
+      width: 100%;
+      margin-top:-2rem; 
+      margin-left:-2rem;
+    }
+    }
+
+
+
+
 
 
  

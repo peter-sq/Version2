@@ -332,6 +332,36 @@
       </div>
    <!------------------------About us  Start----------------------------------------> 
 
+  
+
+
+<!-- Subscribe Modal -->
+  <div class="modal fade" id="modal-subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-sm-row flex-column">
+            <div class="p-2" style="margin-right: -3rem;">
+             <img src="assets/images/designmock.png" class="mockup-image">
+            </div>
+            <div class="p-2">
+              <h1 class="text-center test-title text-uppercase" style="font-size: 25px; color: #47A7FD; ">MyMedicalBank PHR <h1>
+              <p>Personal Health Records(PHR) App</p>
+              <span><p>Launching 18 September, 2023</p></span>
+              <span><p>Get the app for free! </p></span>
+              <a href="https://app.mymedicalbank.com/phr#phrForm" class=""style="margin-left: 50px; font-size:20px; color: #47A7FD; ">Pre-Register</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
    <section class="about-us-section" id="about-us">
    <div class="about-us">
     <div class="column-1 box">
@@ -839,6 +869,12 @@
 
     /* Begin jQuery */ ;
     (function ($) {
+
+      $ (window).ready (function () {
+	setTimeout (function () {
+		$ ('#modal-subscribe').modal ("show")
+	}, 1000)
+})
 
     $(window).scroll(function (e) {
       if ($(window).scrollTop() >= $("header").height() + 30) {
