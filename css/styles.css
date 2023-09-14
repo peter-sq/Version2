@@ -2539,7 +2539,7 @@ footer .flex:last-child a{
 }
 
 .modal-dialog{
-  margin: 5rem 25rem
+  margin: 5rem 18rem
 }
 .modal-content{
   width: 50rem;
@@ -2578,6 +2578,52 @@ footer .flex:last-child a{
       margin-left:-2rem;
     }
     }
+
+    .form-control {
+      display: block;
+      width: 50%;
+      min-height: calc(1.5em + .75rem + 2px);
+      padding: .575rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--mmb-blue);
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 52px;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: var(--mmb-blue);
+  outline: 0;
+  box-shadow: none;
+}
+
+
+.input-group-text{
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+  color: #fff;
+  background-color: var(--mmb-blue);
+  border-color: var(--mmb-blue);
+}
+
+
+
+
+.border-rad:hover{
+ 
+   background-color: #f9a826;
+  border-color: #f9a826;
+
+}
 
 
 
